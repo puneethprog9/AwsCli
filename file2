@@ -1,0 +1,165 @@
+    1  sudo su
+    2  cd ..
+    3  ls
+    4  aws cli
+    5  git
+    6  clear
+    7  ls
+    8  pwd
+    9  mkdir github
+   10  ls
+   11  git clone https://github.com/praveengowdaballa/CLI.git
+   12  ls
+   13  cd github/
+   14  ls
+   15  clear
+   16  ls -ll
+   17  history 
+   18  ls -la
+   19  clear
+   20  ls -la
+   21  ls -lat
+   22  ls 
+   23  cat cli.txt
+   24  vi cli.txt
+   25  ls
+   26  git status
+   27  git 
+   28  git add -a cli.txt 
+   29  git init 
+   30  git status
+   31  ls -la
+   32  git status
+   33  git add -a cli.txt 
+   34  git add -A cli.txt 
+   35  git status
+   36  git commit -m "First File" cli.txt 
+   37  git status
+   38  git push origin master
+   39  git remote add origin https://github.com/praveengowdaballa/CLI.git
+   40  git push origin master
+   41  ls
+   42  git status
+   43  git pull origin master 
+   44  ls
+   45  git log
+   46  git head
+   47  cat cli.txt 
+   48  vi cli.txt 
+   49  git add -A cli.txt 
+   50  git commit -m "Second commit" cli.txt 
+   51  git push origin master
+   52  git config --global user.name "praveengowdaballa"
+   53  git config --global user.email "praveen.kg995@gmail.com"
+   54  git push origin master
+   55  clear
+   56  git head
+   57  git log 
+   58  git reset 
+   59  ls 
+   60  cat cli.txt 
+   61  clear
+   62  ls 
+   63  cat cli.txt 
+   64  git log 
+   65  git checkout [revision] .
+   66  git checkout d84783abe3745478bddf7715da8aab634ebec06d cli.txt 
+   67  cat cli.txt 
+   68  git checkout d84783abe3745478bddf7715da8aab634ebec06d 
+   69  clear
+   70  git log 
+   71  ls 
+   72  git checkout d84783abe3745478bddf7715da8aab634ebec06d cli.txt 
+   73  ls
+   74  cat cli.txt 
+   75  clear
+   76  git commit -m "reverted" cli.txt 
+   77  git push origin master
+   78  ls
+   79  aws ec2 describe -instances
+   80  aws ec2 describe-instances
+   81  aws configure
+   82  aws ec2 describe-instances
+   83  aws ec2 describe-instances --output table
+   84  aws ec2 describe-instances --query 'reservations[*].instances[*]'
+   85  aws ec2 describe-instances --query 'Reservations[*].Instances[*]'
+   86  aws ec2 describe-instances --query 'Reservations[*].Instances[*]' --output table
+   87  aws ec2 describe-instances --query 'Reservations[*].Instances[*]'--output table
+   88  aws ec2 describe-instances --query 'Reservations[*].Instances[*]' --output table
+   89  aws ec2 describe-instances --query 'Reservations[*].Instances[*]' --output text
+   90  aws ec2 describe-instances --query 'Reservations[*].Instances[*].NetworkInterfaces[*]'
+   91  aws ec2 describe-instances --query 'Reservations[*].Instances[*].NetworkInterfaces[*].Status'
+   92  aws ec2 describe-instances --query 'Reservations[*].Instances[*].NetworkInterfaces[*].[Status,MacAddress]'
+   93  aws ec2 describe-instances --query 'Reservations[*].Instances[*].SubnetId[*]Instances[*]NetworkInterfaces.MacAddress]'
+   94  aws ec2 describe-instances --query 'Reservations[*].Instances[*].SubnetId[*]Instances[*].NetworkInterfaces.MacAddress]'
+   95  aws ec2 describe-instances --query 'Reservations[*].Instances[*].SubnetId[*]Instances[*].NetworkInterfaces[*].MacAddress]'
+   96* aws ec2 describe-instances --query 'Reservations[*].Instances,SubnetId[].NetworkInterfaces[*].{MAC:MacAddress}'
+   97  aws ec2 describe-instances --query 'Reservations[*].Instances[*].SubnetId'
+   98  aws ec2 describe-instances --query 'Reservations[*].Instances[*].[SubnetId,NetworkInterfaces[].MacAddress]'
+   99  aws ec2 describe-instances --query 'Reservations[*].Instances[*].[SubnetId,NetworkInterfaces[].MacAddress]' --output text
+  100  aws ec2 describe-instances --query 'Reservations[*].Instances[*].[SubnetId,NetworkInterfaces[].[MacAddress,NetworkInterfaceId]' --output text
+  101  aws ec2 describe-instances --query 'Reservations[*].Instances[*].[SubnetId,NetworkInterfaces[].[MacAddress,NetworkInterfaceId]]' --output text
+  102  aws ec2 describe-instances --query 'Reservations[*].Instances[*].[SubnetId,NetworkInterfaces[].[MacAddress,NetworkInterfaceId,Groups[].GroupId]]' --output text
+  103  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone
+aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'
+  104  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone
+aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'
+  105  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'
+  106  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone' 
+  107  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc -1
+  108  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc - 1
+  109  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc -1
+  110  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc 1
+  111  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc -2
+  112  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'  --output text | wc -1
+  113  aws ec2 describe-instances --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone
+aws ec2 describe-instances --filters --query 'Reservations[*].Instances[*].Placement[].AvailabilityZone'
+  114  aws ec2 describe-instances --filters "Name=instance-id,Values=i-04c1980f9291e6043"
+  115  aws ec2 describe-instances  --filters "Name=instance-id,Values=i-04c1980f9291e6043" --query 'Reservations[*]
+  116  aws ec2 describe-instances  --filters "Name=instance-id,Values=i-04c1980f9291e6043" --query 'Reservations[*]'
+  117* aws ec2 describe-instances  --filters "Name=instance-id,Values=instance-state-name" --query 'Reservations[*].Instances[*]'
+  118  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=i-stopped" --query 'Reservations[*]'
+  119  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*]'
+  120  clear
+  121  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].instances[*]'
+  122  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]'
+  123* aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]' --output table
+  124  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]' --output text
+  125  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].[Instances,InstanceID]' --output text
+  126  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]'|grep instance|cut -f 9 --output text
+  127  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]'|grep instance|cut -f 8 --output text
+  128  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]'|grep instance|cut -f 7 --output text
+  129  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].instances[*]'
+  130  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]'
+  131  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*]' --output text
+  132  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*].InstanceId' --output text
+  133  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*].InstanceId' --output text >file1
+  134  cat file1 
+  135  ls -ll
+  136  vi run_stopped_ec2.sh
+  137  chmod 0755 run_stopped_ec2.sh 
+  138  ./run_stopped_ec2.sh 
+  139  vi run_stopped_ec2.sh 
+  140  ./run_stopped_ec2.sh 
+  141  vi run_stopped_ec2.sh 
+  142  ./run_stopped_ec2.sh 
+  143  touch run_stop.sh
+  144  ls
+  145  cat run_stopped_ec2.sh >>run_stop.sh 
+  146  vi run_stop.sh 
+  147  chmod 0755 run_stop.sh 
+  148  ./run_stop.sh 
+  149  vi run_stop.sh 
+  150  ./run_stop.sh 
+  151  aws ec2 describe-instances  --filters "Name=instance-state-name,Values=stopped" --query 'Reservations[*].Instances[*].InstanceId' --output text
+  152  ./run_stop.sh 
+  153  vi run_stop.sh 
+  154  ./run_stop.sh 
+  155  vi run_stop.sh 
+  156  history
+  157  history >> today_cli
+  158  ls
+  159  vi today_cli 
+  160  history
+  161  history |more
+  162  history |more >file2
